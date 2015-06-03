@@ -1,8 +1,8 @@
+ï»¿
+Rubyä¸­å¦‚ä½•å†™ä¸€ä¸ªswitchè¯­å¥ï¼Ÿ
+é—®é¢˜[é“¾æ¥](http://stackoverflow.com/questions/948135/how-can-i-write-a-switch-statement-in-ruby)
 
-RubyÖĞÈçºÎĞ´Ò»¸öswitchÓï¾ä£¿
-ÎÊÌâ[Á´½Ó](http://stackoverflow.com/questions/948135/how-can-i-write-a-switch-statement-in-ruby)
-
-RubyÊ¹ÓÃ`case`[±í´ïÊ½](http://ruby-doc.com/docs/ProgrammingRuby/html/tut_expressions.html#S5)´úÌæ
+Rubyä½¿ç”¨`case`[è¡¨è¾¾å¼](http://ruby-doc.com/docs/ProgrammingRuby/html/tut_expressions.html#S5)ä»£æ›¿
 
 ```
 case a
@@ -17,30 +17,30 @@ else
 end
 ```
 
-±È½Ï¶ÔÏóÔÚwhen×Ó¾äÖĞ¶ÔÏóºÍcase×Ó¾äÖĞµÄÖµÊ¹ÓÃ`===`²Ù×÷·û±È½Ï¡£Ò²¾ÍÊÇËµ£¬`1..5===a`ºÍ`Sting===a`,¶ø²»ÊÇ`a===1..5`¡£
-ÉÏÃæ¿´µ½µÄÓï·¨ÊÇ·Ç³£¾«ÖÂµÄ£¬Äã¿ÉÒÔÊ¹ÓÃ·¶Î§ºÍÀà£¬»òÕß¸÷ÖÖ¸÷ÑùµÄ¶«Î÷¶ø²»½öÊÇ²âÊÔÏàµÈ¡£
+æ¯”è¾ƒå¯¹è±¡åœ¨whenå­å¥ä¸­å¯¹è±¡å’Œcaseå­å¥ä¸­çš„å€¼ä½¿ç”¨`===`æ“ä½œç¬¦æ¯”è¾ƒã€‚ä¹Ÿå°±æ˜¯è¯´ï¼Œ`1..5===a`å’Œ`Sting===a`,è€Œä¸æ˜¯`a===1..5`ã€‚
+ä¸Šé¢çœ‹åˆ°çš„è¯­æ³•æ˜¯éå¸¸ç²¾è‡´çš„ï¼Œä½ å¯ä»¥ä½¿ç”¨èŒƒå›´å’Œç±»ï¼Œæˆ–è€…å„ç§å„æ ·çš„ä¸œè¥¿è€Œä¸ä»…æ˜¯æµ‹è¯•ç›¸ç­‰ã€‚
 
 
-Ä¬ÈÏ°²×°gemÊ±£¬Ê¹ÓÃ--no-ri --no-rdoc?
-ÎÊÌâ[Á´½Ó](http://stackoverflow.com/questions/1381725/how-to-make-no-ri-no-rdoc-the-default-for-gem-install)
+é»˜è®¤å®‰è£…gemæ—¶ï¼Œä½¿ç”¨--no-ri --no-rdoc?
+é—®é¢˜[é“¾æ¥](http://stackoverflow.com/questions/1381725/how-to-make-no-ri-no-rdoc-the-default-for-gem-install)
 
-°ÑÏÂÒ»ĞĞÌí¼Ó½ø±¾µØ`~/.gemrc`ÎÄ¼ş£¨Î»ÓÚ__home__ÎÄ¼ş¼Ğ£©
+æŠŠä¸‹ä¸€è¡Œæ·»åŠ è¿›æœ¬åœ°`~/.gemrc`æ–‡ä»¶ï¼ˆä½äº__home__æ–‡ä»¶å¤¹ï¼‰
 
 ```
 gem: --no-document
 ```
 
-»òÕßÄã¿ÉÒÔÌí¼ÓÏÂĞĞµ½È«¾ÖgemrcÅäÖÃÎÄ¼şÖĞ¡£ÈçºÎÕÒµ½Ëü£¨linuxÖĞ£©
+æˆ–è€…ä½ å¯ä»¥æ·»åŠ ä¸‹è¡Œåˆ°å…¨å±€gemrcé…ç½®æ–‡ä»¶ä¸­ã€‚å¦‚ä½•æ‰¾åˆ°å®ƒï¼ˆlinuxä¸­ï¼‰
 
 ```
 strace gem source 2>&1 | grep gemrc
 ```
 
-ÎÒÈçºÎ½«ÃüÁîĞĞ²ÎÊı´«µİ¸øÒ»¸örakeÈÎÎñ£¿
+æˆ‘å¦‚ä½•å°†å‘½ä»¤è¡Œå‚æ•°ä¼ é€’ç»™ä¸€ä¸ªrakeä»»åŠ¡ï¼Ÿ
 
-ÎÊÌâ[Á´½Ó](http://stackoverflow.com/questions/825748/how-do-i-pass-command-line-arguments-to-a-rake-task)
+é—®é¢˜[é“¾æ¥](http://stackoverflow.com/questions/825748/how-do-i-pass-command-line-arguments-to-a-rake-task)
 
-Í¨¹ıÌí¼ÓÈÎÎñµ÷ÓÃµÄ²ÎÊı±êÖ¾¿ÉÒÔÔÚrakeÖĞ¶¨ÒåÕıÊ½µÄ²ÎÊı¡£ÀıÈç£º
+é€šè¿‡æ·»åŠ ä»»åŠ¡è°ƒç”¨çš„å‚æ•°æ ‡å¿—å¯ä»¥åœ¨rakeä¸­å®šä¹‰æ­£å¼çš„å‚æ•°ã€‚ä¾‹å¦‚ï¼š
 ```
 require 'rake'
 
@@ -69,7 +69,7 @@ task :with_defaults, :arg1, :arg2 do |t, args|
 end
 ```
 
-Ö®ºó£¬ÃüÁîĞĞ²Ù×÷£º
+ä¹‹åï¼Œå‘½ä»¤è¡Œæ“ä½œï¼š
 
 ```
 > rake my_task[1,2]
@@ -97,62 +97,62 @@ Args with defaults were: {:arg1=>:default_1, :arg2=>:default_2}
 Args with defaults were: {:arg1=>"x", :arg2=>"y"}
 ```
 
-µÚ¶ş¸öÊ¾Àı½ö×÷ÎªÑİÊ¾£¬Èç¹ûÄãÏëÊ¹ÓÃ¿Õ°×£¬ÒıºÅ°ü¹ü×¡Ä¿±êÃû³ÆÊÇ±ØĞëµÄ
-±£Ö¤¿Õ°×´¦·Ö¸ôshell¡£
+ç¬¬äºŒä¸ªç¤ºä¾‹ä»…ä½œä¸ºæ¼”ç¤ºï¼Œå¦‚æœä½ æƒ³ä½¿ç”¨ç©ºç™½ï¼Œå¼•å·åŒ…è£¹ä½ç›®æ ‡åç§°æ˜¯å¿…é¡»çš„
+ä¿è¯ç©ºç™½å¤„åˆ†éš”shellã€‚
 
-¹Û²ì**rake.rb**ÖĞµÄ´úÂë£¬rakeÃ»ÓĞ½âÎörake×Ö·û´®À´ÌáÈ¡²ÎÊı×÷ÎªÏÈ¾öÌõ¼ş¡£
-ËùÒÔÄã²»ÄÜ×ö`task :t1=> "dep[1,2]"`¡£Ê¶±ğ²»Í¬²ÎÊı×÷ÎªÏÈ¾öÌõ¼şµÄÎ¨Ò»Í¾¾¶ÊÇÔÚÒÀÀµÈËÎïĞĞÎªÖĞÏÔÊ½µÄµ÷ÓÃËü£¬±ÈÈç`:invoke_my_task`ºÍ`:invoke_my_task_2`
+è§‚å¯Ÿ**rake.rb**ä¸­çš„ä»£ç ï¼Œrakeæ²¡æœ‰è§£ærakeå­—ç¬¦ä¸²æ¥æå–å‚æ•°ä½œä¸ºå…ˆå†³æ¡ä»¶ã€‚
+æ‰€ä»¥ä½ ä¸èƒ½åš`task :t1=> "dep[1,2]"`ã€‚è¯†åˆ«ä¸åŒå‚æ•°ä½œä¸ºå…ˆå†³æ¡ä»¶çš„å”¯ä¸€é€”å¾„æ˜¯åœ¨ä¾èµ–äººç‰©è¡Œä¸ºä¸­æ˜¾å¼çš„è°ƒç”¨å®ƒï¼Œæ¯”å¦‚`:invoke_my_task`å’Œ`:invoke_my_task_2`
 
-×¢ÒâÒ»Ğ©shell£¨±ÈÈçzsh£©ĞèÒªºöÂÔ·½À¨ºÅ£º`rake my_task\['arg1']\`
+æ³¨æ„ä¸€äº›shellï¼ˆæ¯”å¦‚zshï¼‰éœ€è¦å¿½ç•¥æ–¹æ‹¬å·ï¼š`rake my_task\['arg1']\`
 
 
-> ÒëÕß×¢£¬¹ØÓÚrakeµÄÀúÊ·£¬Çë²Î¿¼[Ruby on RailsÖĞµÄRake½Ì³Ì(RakeÈçºÎ°ÑÎÒ¹à×í!)](http://www.cnblogs.com/wangyuyu/p/3301473.html)
+> è¯‘è€…æ³¨ï¼Œå…³äºrakeçš„å†å²ï¼Œè¯·å‚è€ƒ[Ruby on Railsä¸­çš„Rakeæ•™ç¨‹(Rakeå¦‚ä½•æŠŠæˆ‘çŒé†‰!)](http://www.cnblogs.com/wangyuyu/p/3301473.html)
 
-RubyÖĞ¼ì²éÒ»¸öÖµÊÇ·ñ´æÔÚÒ»¸öÊı×é£¿
+Rubyä¸­æ£€æŸ¥ä¸€ä¸ªå€¼æ˜¯å¦å­˜åœ¨ä¸€ä¸ªæ•°ç»„ï¼Ÿ
 
-ÎÊÌâ[Á´½Ó](http://stackoverflow.com/questions/1986386/check-if-a-value-exists-in-an-array-in-ruby)
+é—®é¢˜[é“¾æ¥](http://stackoverflow.com/questions/1986386/check-if-a-value-exists-in-an-array-in-ruby)
 
-Äã¿ÉÒÔÊ¹ÓÃ`[include?](http://ruby-doc.org/core-1.9.3/Array.html#method-i-include-3F)`
+ä½ å¯ä»¥ä½¿ç”¨`[include?](http://ruby-doc.org/core-1.9.3/Array.html#method-i-include-3F)`
 
 ```
 >> ['Cat', 'Dog', 'Bird'].include? 'Dog'
 => true
 ```
 
-> ÏÂÃæÒ²ÓĞ»Ø´ğ¿ÉÒÔÓÃ%w(Cat Dog Bird).include? 'Dog'£¬¸ü¼Ó·½±ã°¡
+> ä¸‹é¢ä¹Ÿæœ‰å›ç­”å¯ä»¥ç”¨%w(Cat Dog Bird).include? 'Dog'ï¼Œæ›´åŠ æ–¹ä¾¿å•Š
 
 
-RubyÖĞÈçºÎ½«Ò»¸ö×Ö·û´®×ª»»ÎªĞ¡Ğ´»ò´óĞ´?
+Rubyä¸­å¦‚ä½•å°†ä¸€ä¸ªå­—ç¬¦ä¸²è½¬æ¢ä¸ºå°å†™æˆ–å¤§å†™?
 
-ÎÊÌâ[Á´½Ó](http://stackoverflow.com/questions/1020568/how-to-convert-a-string-to-lower-or-upper-case-in-ruby)
+é—®é¢˜[é“¾æ¥](http://stackoverflow.com/questions/1020568/how-to-convert-a-string-to-lower-or-upper-case-in-ruby)
 
-RubyÓĞºÜ¶à·½·¨¸Ä±ä×Ö·û´®µÄ´óĞ¡Ğ´¡£×ª»»³ÉĞ¡Ğ´£¬Ê¹ÓÃ`downcase`:
+Rubyæœ‰å¾ˆå¤šæ–¹æ³•æ”¹å˜å­—ç¬¦ä¸²çš„å¤§å°å†™ã€‚è½¬æ¢æˆå°å†™ï¼Œä½¿ç”¨`downcase`:
 
 ```
 "hello James!".downcase    #=> "hello james!"
 
 ```
 
-Í¬ÑùµØ£¬`upcase`´óĞ´Ã¿Ò»¸ö×ÖÄ¸ºÍ`capitalize `´óĞ´×Ö·û´®µÄÊ××ÖÄ¸£¬Ğ¡Ğ´Ê£ÏÂµÄ×ÖÄ¸£º
+åŒæ ·åœ°ï¼Œ`upcase`å¤§å†™æ¯ä¸€ä¸ªå­—æ¯å’Œ`capitalize `å¤§å†™å­—ç¬¦ä¸²çš„é¦–å­—æ¯ï¼Œå°å†™å‰©ä¸‹çš„å­—æ¯ï¼š
 
 ```
 "hello James!".upcase      #=> "HELLO JAMES!"
 "hello James!".capitalize  #=> "Hello james!"
 ```
-Èç¹û¸Ä±ä×Ö·û´®±¾Éí£¬Äã¿ÉÒÔ¼ÓÉÏ¸ĞÌ¾ºÅ¸øÕâĞ©·½·¨ÈÎÒâÒ»¸ö¡£
+å¦‚æœæ”¹å˜å­—ç¬¦ä¸²æœ¬èº«ï¼Œä½ å¯ä»¥åŠ ä¸Šæ„Ÿå¹å·ç»™è¿™äº›æ–¹æ³•ä»»æ„ä¸€ä¸ªã€‚
 
 ```
 string = "hello James!"
 string.downcase!
 string   #=> "hello james!"
 ```
-¸ü¶àĞÅÏ¢²Î¿¼[StringÎÄµµ](http://ruby-doc.org/core-2.2.2/String.html)
+æ›´å¤šä¿¡æ¯å‚è€ƒ[Stringæ–‡æ¡£](http://ruby-doc.org/core-2.2.2/String.html)
 
-Rubyµ÷ÓÃshellÃüÁî
+Rubyè°ƒç”¨shellå‘½ä»¤
 
-ÎÊÌâ[Á´½Ó](http://stackoverflow.com/questions/2232/calling-shell-commands-from-ruby)
+é—®é¢˜[é“¾æ¥](http://stackoverflow.com/questions/2232/calling-shell-commands-from-ruby)
 
-±¾Æª½âÊÍÊÇ»ùÓÚÎÒÒ»¸öÅóÓÑµÄ[Ruby ½Å±¾ÆÀÂÛ](http://gist.github.com/4069)£¬Èç¹ûÄãÏëÒªÌá¸ßÕâ¸ö½Å±¾£¬¾¡ÇéĞŞ¸ÄÁ´½Ó¡£
+æœ¬ç¯‡è§£é‡Šæ˜¯åŸºäºæˆ‘ä¸€ä¸ªæœ‹å‹çš„[Ruby è„šæœ¬è¯„è®º](http://gist.github.com/4069)ï¼Œå¦‚æœä½ æƒ³è¦æé«˜è¿™ä¸ªè„šæœ¬ï¼Œå°½æƒ…ä¿®æ”¹é“¾æ¥ã€‚
 
 
 
